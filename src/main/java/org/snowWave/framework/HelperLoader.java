@@ -1,9 +1,6 @@
 package org.snowWave.framework;
 
-import org.snowWave.framework.helper.BeanHelper;
-import org.snowWave.framework.helper.ClassHelper;
-import org.snowWave.framework.helper.ControllerHelper;
-import org.snowWave.framework.helper.IocHelper;
+import org.snowWave.framework.helper.*;
 import org.snowWave.framework.util.ClassUtil;
 
 /**
@@ -16,6 +13,7 @@ public final class HelperLoader {
         Class<?>[] classList = {
                 ClassHelper.class,
                 BeanHelper.class,
+                AopHelper.class,
                 IocHelper.class,
                 ControllerHelper.class
         };
