@@ -3,6 +3,7 @@ package org.snowWave.framework.util;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.Collection;
+import java.util.Set;
 
 /**
  * 集合工具类
@@ -10,17 +11,19 @@ import java.util.Collection;
  */
 public class CollectionUtil {
 
+
     /**
      * 判断集合是否非空
+     * @param collection
      */
-    public static boolean isNotEmpty(Collection collection) {
-        return !CollectionUtils.isEmpty(collection);
+    public static boolean isNotEmpty(Set<Class<?>> collection) {
+        return CollectionUtils.isNotEmpty((Collection<?>) collection);
     }
 
     /**
      * 判断集合是否为空
      */
-    public static boolean isEmpty(Collection collection) {
+    public static boolean isEmpty(Collection<?> collection) {
         return CollectionUtils.isEmpty(collection);
     }
 }

@@ -4,7 +4,7 @@ import org.snowWave.framework.helper.*;
 import org.snowWave.framework.util.ClassUtil;
 
 /**
- * 加载相应的Helper类
+ * 加载相应的Helper类,初始化框架
  * Created by SnowWave on 2017/7/18.
  */
 public final class HelperLoader {
