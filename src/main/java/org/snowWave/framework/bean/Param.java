@@ -1,5 +1,8 @@
 package org.snowWave.framework.bean;
 
+import org.snowWave.framework.util.CollectionUtil;
+
+import java.util.Collection;
 import java.util.Map;
 
 /**
@@ -26,5 +29,12 @@ public class Param {
      */
     public Map<String, Object> getMap() {
         return paramMap;
+    }
+
+    /**
+     * 判断是否为空
+     */
+    public boolean isEmpty() {
+        return CollectionUtil.isEmpty((Collection<?>) paramMap);
     }
 }
