@@ -1,9 +1,10 @@
 package org.snowWave.framework.util;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.snowWave.framework.bean.FormParam;
 
 import java.util.Collection;
-import java.util.Set;
+import java.util.List;
 
 /**
  * 集合工具类
@@ -12,12 +13,12 @@ import java.util.Set;
 public class CollectionUtil {
 
 
+
     /**
      * 判断集合是否非空
-     * @param collection
      */
-    public static boolean isNotEmpty(Set<Class<?>> collection) {
-        return CollectionUtils.isNotEmpty((Collection<?>) collection);
+    public static boolean isNotEmpty(Collection<?> collection) {
+        return CollectionUtils.isNotEmpty(collection);
     }
 
     /**

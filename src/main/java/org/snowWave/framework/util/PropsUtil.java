@@ -66,4 +66,14 @@ public class PropsUtil {
         return value;
     }
 
+    /**
+     * 获取int型属性
+     */
+    public static int getInt(Properties props, String key, int defalutValue){
+        int value = defalutValue;
+        if (props.containsKey(key)) {
+            value = Integer.parseInt(props.getProperty(key));
+        }
+        return value;
+    }
 }

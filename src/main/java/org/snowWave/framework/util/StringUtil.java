@@ -9,6 +9,12 @@ import java.util.Collection;
  * Created by SnowWave on 2017/7/18.
  */
 public class StringUtil {
+
+    /**
+     * 字符串分隔符
+     */
+    public static final String SEPARATOR = String.valueOf((char) 29);
+
     /**
      * 判断String是否非空
      */

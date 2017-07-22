@@ -15,4 +15,6 @@ public interface ConfigConstant {
     String APP_BASE_PACKAGE = "brief.framework.app.base_package";
     String APP_JSP_PATH = "brief.framework.app.jsp_path";
     String APP_ASSET_PATH = "brief.framework.app.asset_path";
+
+    String APP_UPLOAD_LIMIT = "brief.framework.app.upload_limit";
 }
