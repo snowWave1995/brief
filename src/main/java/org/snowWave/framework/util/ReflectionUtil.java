@@ -50,6 +50,7 @@ public final class ReflectionUtil {
     public static void setField(Object obj, Field field, Object value) {
         try {
             field.setAccessible(true);
+            field.set(obj, value);
         } catch (Exception e) {
             LOGGER.error("set field failure", e);
             throw new RuntimeException(e);
